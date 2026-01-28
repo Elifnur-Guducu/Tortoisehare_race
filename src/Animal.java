@@ -1,7 +1,19 @@
-public class TortoiseHare {
-    int FINISH=70;
-    int tortoisePos=1;
-    int harePos=1;
-    int tick=0;
-    
+import java.util.Random;
+public class Animal {
+    private int position=1; //bu başlangıçta bulundukları satır
+    Random rand = new Random();
+
+    public void setPosition(int newposition) {
+        if (newposition<1)
+            this.position=1;
+        else
+            this.position=newposition;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+    public void move(){
+
+    }
 }
